@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.homehedding{
+    font-family: "Oswald", sans-serif;
+}
+  @keyframes progress-animation {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 20%;
+    }
+  }
+
+  .animate-progress {
+    animation: progress-animation 2s ease-in-out forwards;
+  }
+
+  @layer utilities {
+    .changecontent::after {
+      content: "";
+      color:  rgb(37, 99 ,235);
+      text-shadow: 0px 1px 1px black;
+      animation: changetext 10s infinite linear;
+    }
+  
+    @keyframes changetext {
+      0% { content: "visiter."; }
+      10% { content: "person."; }
+      20% { content: "patient."; }
+    }
+  }
+  
