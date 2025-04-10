@@ -8,7 +8,7 @@ import doc6 from "../assets/doc6.jpg"
 import doc7 from "../assets/doc7.jpg"
 import doc8 from "../assets/doc8.jpg"
 
-const Docters = () => {  
+const Doctors = () => {  
   return (
     <> 
       <div className='bg-white py-10'>
@@ -124,4 +124,4 @@ const Docters = () => {
   )
 }
 
-export default Docters
+export default Doctors

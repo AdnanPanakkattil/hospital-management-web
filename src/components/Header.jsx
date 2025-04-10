@@ -1,45 +1,52 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
-import Logo from "../assets/logo2.png"
+ import {Link} from 'react-router-dom'
+// import Logo from "../assets/logo2.png"
 
 const Header = () => {
 
   return (
 <>
   <header className='bg-white  h-[90px] '>
-    <div className='flex justify-between items-center w-[92%]  mx-auto'>
-      <span className='text-3xl fond-[popins] text-white '>
-           <img src={Logo} alt="" className='lg:h-[70px] h-[80px] py-[5px] ' />   
-      </span>
-      <div className='nav-links duration-500 md:static absolute z-20 lg:py-[15px]  md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5'>
-        <ul className='flex md:flex-row flex-col md:text-right md:gap-[4vw] gap-8 '>
-          <li>
-            <Link to={'/'} className='hover:text-white hover:bg-blue-600 rounded-2xl p-3  text-black text-[20px]' >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link to={'/about'} className='hover:text-white hover:bg-blue-600  rounded-2xl p-3 text-black text-[20px] ' >
-              About
-            </Link>
-          </li>
-          <li>
-            <Link to={'/Docters'} className='hover:text-white hover:bg-blue-600  rounded-2xl p-3 text-black text-[20px]'>
-              Docters
-            </Link>
-          </li>
-          <li>
-            <Link to={'/contact'} className='hover:text-white hover:bg-blue-600  rounded-2xl p-3  text-black text-[20px]' >
-              Contact
-            </Link>
-          </li>
-        </ul>
-        <button className='bg-indigo-600 text-white font-[Poppins] py-2 px-6 rounded md:ml-8 hover:bg-indigo-600 duration-500 my-3 gap-6 W-'>
-            <Link to={'/Appoinment'} className='  rounded-2xl p-3  text-white text-[20px]' >
-            Appoinment
-            </Link>
-        </button>
+    <div class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
+      <div class="flex justify-between items-center ">
+        <a href="#" class="flex items-center whitespace-nowrap text-2xl font-black">
+          <span class="mr-2 w-8">
+            <img src="/images/JOJj79gp_Djhwdp_ZOKLL.png" alt="" />
+          </span>
+          hospital
+        </a>
+        <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
       </div>
+      <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+        <li class="mx-4 my-6 md:my-0">
+          <Link to={'/'} class="text-xl hover:text-blue-500 duration-500" >
+            HOME
+          </Link>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <Link to={'/about'} class="text-xl hover:text-blue-500 duration-500"  >
+            ABOUT
+          </Link>      
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <Link to={'/Doctors'}  class="text-xl hover:text-blue-500 duration-500">
+            DOCTERS
+          </Link>      
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <Link to={'/contact'} class="text-xl hover:text-blue-500 duration-500" >
+            CONTACT
+          </Link>
+        </li>
+        <button class="bg-blue-400 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-black rounded ">
+          <Link to={'/Appoinment'} className='  rounded-2xl p-3  text-white text-[20px]' >
+            Appoinment
+           </Link>
+        </button>
+        <h2 class=""></h2>
+      </ul>
     </div>
   </header> 
 </>

@@ -6,7 +6,7 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import HomePage from './pages/HomePage.jsx'
 import AboutPage from './pages/AboutPage.jsx'
 import ContactPage from './pages/ContactPage.jsx'
-import DoctersgPage from './pages/DoctersPage.jsx'
+import DoctorsgPage from './pages/DoctorsPage.jsx'
 import AppoinmentPage from './pages/AppoinmentPage.jsx.jsx'
 
 const router = createBrowserRouter([
@@ -26,8 +26,8 @@ const router = createBrowserRouter([
         element:<AboutPage/>
       },
       {
-        path:'/Docters',
-        element:<DoctersgPage/>
+        path:'/Doctors',
+        element:<DoctorsgPage/>
       },
       {
         path:'/contact',

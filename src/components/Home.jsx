@@ -15,11 +15,13 @@ import { ServiceData } from "../constants";
 const Home = () => {  
 
   return (
+
+    
  <>
     <div className='flex'>
       <img src={Frame} alt="" className='lg:w-full lg:h-[650px] sm:h-[400px] sm:w-full xl:w-full xl:h-[650px] 2xl:h-[700px]'/>
     </div> 
-    <div className='lg:h-[300px] lg:w-[600px] 2xl:h-[400px] 2xl:w-[800px] absolute top-[180px] left-[100px] sm:top-[180px] sm:left-[100px] lg:top-[250px] lg:left-[50px] md:top-[150px] md:left-[50px] xl:top-[280px] xl:left-50px 2xl:top-[280px] 2xl:left-[150px]'>
+    <div className='lg:h-[300px] lg:w-[600px] 2xl:h-[400px] 2xl:w-[800px] absolute z-10 top-[180px] left-[100px] sm:top-[180px] sm:left-[100px] lg:top-[250px] lg:left-[50px] md:top-[150px] md:left-[50px] xl:top-[280px] xl:left-50px 2xl:top-[280px] 2xl:left-[150px]'>
       <div className='text-4xl sm:text-4xl lg:text-5xl  md:text-4xl xl:text-5xl 2xl:text-6xl mb-4 '>
         We Provide  <a href=""  className='text-blue-600 gap-10  ' >Medical</a>Servises
       </div>
@@ -161,7 +163,7 @@ const Home = () => {
       <p className='xl:text-[15px] text-[10px] sm:text-[10px] lg:text-[14px] f font-semibold mb-28 md:text-[14px] lg:text-1xl'>Head Physician</p>
     </div>
   </div>
-  
+
  </>
   )
 }
