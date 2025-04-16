@@ -8,7 +8,6 @@ import "swiper/css/pagination";
 import "swiper/css/free-mode";
 
 import { FreeMode, Pagination } from "swiper/modules";
-
 import { RxArrowTopRight } from "react-icons/rx";
 import { ServiceData } from "../constants";
 
@@ -16,7 +15,6 @@ const Home = () => {
 
   return (
 
-    
  <>
     <div className='flex'>
       <img src={Frame} alt="" className='lg:w-full lg:h-[650px] sm:h-[400px] sm:w-full xl:w-full xl:h-[650px] 2xl:h-[700px]'/>
@@ -41,7 +39,7 @@ const Home = () => {
 
     <div className="w-full h-[750px] sm:w-full sm:h-[750px] md:h-[500px] lg:h-[200px] xl:h-[200px] p-4">
       <div className="grid grid-cols-1 absolute lg:top-[670px] lg:left-[40px] xl:left-[170px] sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div className="w-[550px] h-[200px] sm:w-[600px]  md:w-[350px] lg:w-[300px] p-4 bg-blue-700 border rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+        <div className="w-[30px] h-[200px] sm:w-[600px]  md:w-[350px] lg:w-[300px] p-4 bg-blue-700 border rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl">
           <h3 className="text-[15px] font-semibold text-white mb-0 text-left">Lorem Amet</h3>
           <h1 className="text-white text-[20px] font-semibold mb-4 text-left">Emergency Cases</h1>
           <p className="text-[15px] font-semibold text-white mb-0 text-left">Lorem ipsum sit amet consectetur</p>
