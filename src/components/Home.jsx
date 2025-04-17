@@ -19,27 +19,29 @@ const Home = () => {
     <div className='flex'>
       <img src={Frame} alt="" className='lg:w-full lg:h-[650px] sm:h-[400px] sm:w-full xl:w-full xl:h-[650px] 2xl:h-[700px]'/>
     </div> 
-    <div className='lg:h-[300px] lg:w-[600px] 2xl:h-[400px] 2xl:w-[800px] absolute z-10 top-[180px] left-[100px] sm:top-[180px] sm:left-[100px] lg:top-[250px] lg:left-[50px] md:top-[150px] md:left-[50px] xl:top-[280px] xl:left-50px 2xl:top-[280px] 2xl:left-[150px]'>
-      <div className='text-4xl sm:text-4xl lg:text-5xl  md:text-4xl xl:text-5xl 2xl:text-6xl mb-4 '>
+    <div className='lg:h-[300px] lg:w-[600px] 2xl:h-[400px] 2xl:w-[800px] absolute z-10 top-[100px] left-[10px] sm:top-[180px] sm:left-[100px] lg:top-[250px] lg:left-[50px] md:top-[150px] md:left-[50px] xl:top-[280px] xl:left-50px 2xl:top-[280px] 2xl:left-[150px]'>
+      <div className='text-[23px]  sm:text-4xl lg:text-5xl  md:text-4xl xl:text-5xl 2xl:text-6xl mb-1 '>
         We Provide  <a href=""  className='text-blue-600 gap-10  ' >Medical</a>Servises
       </div>
-      <div className=' text-4xl lg:text-5xl md:text-4xl xl:text-4xl 2xl:text-6xl mb-8'>
+      <div className=' text-[23px] lg:text-5xl md:text-4xl xl:text-4xl 2xl:text-6xl mb-2'>
         That You Can <a href="" className='text-blue-600 gap-10'>Trust!</a>
       </div>
-      <div className='mb-10 text-[15px] sm:text-1xl md:tetx-[2xl] lg:text-[xl] xl:text-1xl 2xl:text-2xl'>
+      <div className='mb-7 text-[10px] sm:text-1xl md:tetx-[2xl] lg:text-[xl] xl:text-1xl 2xl:text-2xl'>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>
         Tenetur maiores eaque dignissimos error molestiae aliquam unde.
       </div>
       <button className="transform transition-all duration-300">
-        <a href="" className="text-white bg-blue-600 p-[15px] 2xl:p-[25px] rounded-2xl hover:scale-110 hover:origin-right hover:bg-black hover:text-white transform transition-all duration-300">
+        <a href="" className="text-white md:text-[15px] text-[11px] bg-blue-600 p-[15px] 2xl:p-[25px] rounded-2xl hover:scale-110 hover:origin-right hover:bg-black hover:text-white transform transition-all duration-300">
           Get Appointment
         </a>
       </button>
     </div>
 
+  
+
     <div className="w-full h-[750px] sm:w-full sm:h-[750px] md:h-[500px] lg:h-[200px] xl:h-[200px] p-4">
       <div className="grid grid-cols-1 absolute lg:top-[670px] lg:left-[40px] xl:left-[170px] sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div className="w-[30px] h-[200px] sm:w-[600px]  md:w-[350px] lg:w-[300px] p-4 bg-blue-700 border rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+        <div className="w-full h-[200px] sm:w-[600px]  md:w-[350px] lg:w-[300px] p-4 bg-blue-700 border rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl">
           <h3 className="text-[15px] font-semibold text-white mb-0 text-left">Lorem Amet</h3>
           <h1 className="text-white text-[20px] font-semibold mb-4 text-left">Emergency Cases</h1>
           <p className="text-[15px] font-semibold text-white mb-0 text-left">Lorem ipsum sit amet consectetur</p>

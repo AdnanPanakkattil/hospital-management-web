@@ -32,6 +32,9 @@
       0% { content: "visiter."; }
       10% { content: "person."; }
       20% { content: "patient."; }
+      3% { content: "visiter."; }
+      40% { content: "person."; }
+      50% { content: "patient."; }
     }
   }
   

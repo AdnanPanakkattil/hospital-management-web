@@ -41,7 +41,7 @@ const Header = () => {
           </Link>
         </li>
         <button class="bg-blue-400 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-black rounded ">
-          <Link to={'/Appoinment'} className='  rounded-2xl p-3  text-white text-[20px]' >
+          <Link to={'/Appoinment'} className='  rounded-2xl p-3  text-white text-[20px] md:text-[13px] ' >
             Appoinment
            </Link>
         </button>

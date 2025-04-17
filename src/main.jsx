@@ -7,7 +7,7 @@ import HomePage from './pages/HomePage.jsx'
 import AboutPage from './pages/AboutPage.jsx'
 import ContactPage from './pages/ContactPage.jsx'
 import DoctorsgPage from './pages/DoctorsPage.jsx'
-import AppoinmentPage from './pages/AppoinmentPage.jsx.jsx'
+import AppoinmentPage from './pages/AppoinmentPage.jsx'
 
 const router = createBrowserRouter([
 
