@@ -55,7 +55,7 @@ const Contact = () => {
           </div> 
 
           <div class="bg-white p-6 rounded-lg shadow-lg  sm:mx-2 mr-1 mt-28 absolute  md:left-5 lg:left-[500px] lg:top-[650px] lg:w-[500px] xl:left-[730px] xl:top-[700px] md:top-[1000px] md:w-[720px] sm:top-[1000px] sm:w-[620px] sm:left-1 top-[1590px] left-0  w-[599px] ">
-            <form action="#" method="POST" class="space-y-4">
+            <form  action="#" method="POST" class="space-y-4">
               <div class="flex flex-col">
                 <label for="name" class="text-lg font-semibold mb-2">Your Name</label>
                 <input type="text" id="name" name="name" placeholder="Enter your name" class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"/>

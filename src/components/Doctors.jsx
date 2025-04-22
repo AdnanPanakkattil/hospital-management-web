@@ -9,7 +9,8 @@ import doc7 from "../assets/doc7.jpg"
 import doc8 from "../assets/doc8.jpg"
 
 const Doctors = () => {  
-  return (
+
+    return (
     <> 
       <div className='bg-white py-10'>
         <div className='text-center py-9 text-3xl'>

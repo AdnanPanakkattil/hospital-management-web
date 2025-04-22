@@ -1,5 +1,5 @@
 import { ApiClient } from "../api/Api";
 
-export const DepartmentData = () => {
+export const getDepartmentData = () => {
     return ApiClient.get('DepartmentApi/')
 }

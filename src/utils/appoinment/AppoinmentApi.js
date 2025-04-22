@@ -5,5 +5,5 @@ export const getAppoinmentData = () => {
 }
 
 export const creategetAppoinmentData = (data)=>{
-    return ApiClient.post('AppoinmentApi/',data  )
+    return ApiClient.post('AppoinmentApi/',data)
 }

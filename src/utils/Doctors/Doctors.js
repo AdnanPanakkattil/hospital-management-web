@@ -1,5 +1,5 @@
  import { ApiClient } from "../api/Api"
 
- export const DoctorsData = () => {
+ export const getDoctorsData = () => {
     return ApiClient.get('/DoctorsApi/')
  }

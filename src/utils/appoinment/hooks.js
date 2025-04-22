@@ -1,6 +1,7 @@
 import { useMutation } from "react-query"
-import { creategetApooinmentData } from "./AppoinmentApi"
+import { creategetAppoinmentData } from "./AppoinmentApi"
+
 
 export const useCreateAppoinment = ()=>{
-    return useMutation((data)=>creategetApooinmentData(data))
+    return useMutation((data)=>creategetAppoinmentData(data))
 }

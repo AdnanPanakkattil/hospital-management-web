@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
+import { QueryClient, QueryClientProvider } from 'react-query'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import HomePage from './pages/HomePage.jsx'
 import AboutPage from './pages/AboutPage.jsx'
@@ -41,9 +42,11 @@ const router = createBrowserRouter([
     ]
   }
 ])
-
+const client = new QueryClient() 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+  <QueryClientProvider client={client}>
   <RouterProvider router={router}/>
-  </StrictMode>,
+  </QueryClientProvider>
+  </StrictMode>
 )
