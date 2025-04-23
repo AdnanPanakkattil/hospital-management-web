@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Form, Input, Button, DatePicker, message, Row, Col,Select, } from 'antd';
 import { useCreateAppoinment } from '../utils/Appoinment/hooks';
-import { getDoctorsData } from '../utils/Doctors/Doctors';
+import { getDoctorsData } from '../utils/Doctors/DoctorsApi';
 import { useQuery } from 'react-query'
-import { getDepartmentData } from '../utils/Department/Department';
+import { getDepartmentData } from '../utils/Department/DepartmentApi';
 
 const { TextArea } = Input;
 
@@ -93,7 +93,7 @@ const Appoinment = () => {
                 
                 allowClear
               />
-              
+
               </Form.Item>
             </Col>
           </Row>
