@@ -83,15 +83,17 @@ const Appoinment = () => {
             </Col>
             <Col xs={24} sm={12}>
               <Form.Item label="Doctor's Name" name="doctor_name" rules={[{ required: true }]}>
-                
+            
               <Select
                 placeholder="select Doctors"
-                options={DoctorsLoading ? [] : Doctorsdata.data.map(it => ({
+                options={DoctorsLoading || !Doctorsdata ? [] : Doctorsdata.data?.map(it => ({
                   value: it.id,
-                  label: it.First_name
+                  label: it.doctor_name
                 }))}
+                
                 allowClear
               />
+              
               </Form.Item>
             </Col>
           </Row>
@@ -102,13 +104,13 @@ const Appoinment = () => {
               <Form.Item label="Department Name" name="department" rules={[{ required: true }]}>
 
               <Select
-            placeholder="select Department"
-            options={ DepartmentLoading ? [] : Departmentdata.data.map(it => ({
-                value: it.id,
-                label: it.department_nam
-            }))}
-            allowClear
-            />
+                placeholder="select Department"
+                options={DepartmentLoading || !Departmentdata ? [] : Departmentdata.data?.map(it => ({
+                  value: it.id,
+                  label: it.department_name
+                  }))}
+                  allowClear
+                />
 
               </Form.Item>
             </Col>
