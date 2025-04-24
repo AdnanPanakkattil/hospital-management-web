@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
-import { Form, Input, Button } from 'antd';
-import { useCreateaContact } from '../utils/Contact/hooks';
-
-
+import { Form, Input, Button, message } from 'antd';
+import { useCreateContact } from '../utils/Contact/Hooks';
 
 const Contact = () => {
+
   const [form] = Form.useForm();
-  const [date, setDate] = useState(null);
-  const { mutate: Create } = useCreateaContact();
+  const { mutate: Create } = useCreateContact();
 
   const onFinish = (values)=>{
     console.log(values);
@@ -17,7 +15,7 @@ const Contact = () => {
         form.resetFields();
       },
       onError(err) {
-        console.error("Submission error:", err);
+        
         message.error("error");
       }
     });
@@ -75,9 +73,8 @@ const Contact = () => {
           </div> 
           </div> 
 
-
           <div className="bg-white p-6 rounded-lg shadow-lg sm:mx-2 mr-1 mt-28 absolute md:left-5 lg:left-[500px] lg:top-[650px] lg:w-[500px] xl:left-[730px] xl:top-[700px] md:top-[1000px] md:w-[720px] sm:top-[1000px] sm:w-[620px] sm:left-1 top-[1590px] left-0 w-[599px]">
-            <Form form={form} layout="vertical" onFinish={onFinish} className="space-y-4" >
+            <Form layout='vertical' onFinish={onFinish} form={form} className="space-y-4" >
               <Form.Item label="Your Name" name="name" rules={[{ required: true, message: 'Please enter your name' }]} >
                 <Input placeholder="Enter your name" />
               </Form.Item>
@@ -88,9 +85,9 @@ const Contact = () => {
                 <Input placeholder="Enter the subject" />
               </Form.Item>
               <Form.Item className="text-center mt-6">
-                <Button type="primary" htmlType="submit" className="w-full sm:w-auto">
-                  Submit
-                </Button>
+              <Form.Item> 
+                <Button htmlType='submit' className='w-full' type='primary'>Submit</Button>
+              </Form.Item>
               </Form.Item>
             </Form>
           </div>
@@ -102,7 +99,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-
   );
 };
 
