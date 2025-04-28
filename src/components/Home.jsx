@@ -1,12 +1,11 @@
 import React from 'react'
 import Frame from "../assets/image1.jpg"
 import a4 from "../assets/1.jpg"
-
+import {Link} from 'react-router-dom'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/free-mode";
-
 import { FreeMode, Pagination } from "swiper/modules";
 import { RxArrowTopRight } from "react-icons/rx";
 import { ServiceData } from "../constants";
@@ -31,9 +30,10 @@ const Home = () => {
         Tenetur maiores eaque dignissimos error molestiae aliquam unde.
       </div>
       <button className="transform transition-all duration-300">
-        <a href="" className="text-white md:text-[15px] text-[11px] bg-blue-600 p-[15px] 2xl:p-[25px] rounded-2xl hover:scale-110 hover:origin-right hover:bg-black hover:text-white transform transition-all duration-300">
+      <Link to={'/Appoinment'} className="text-white md:text-[15px] text-[11px] bg-blue-600 p-[15px] 2xl:p-[25px] rounded-2xl hover:scale-110 hover:origin-right hover:bg-black hover:text-white transform transition-all duration-300">
           Get Appointment
-        </a>
+      </Link>
+
       </button>
     </div>
 

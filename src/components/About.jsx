@@ -6,11 +6,9 @@ import s3 from "../assets/s3.png"
 import s4 from "../assets/s4.png"
 
 const About = () => {
-
-
+zz
   return (
     <>
-
         <div className='bg-blue-400 w-full h-[100px] sm:h-[140px] sm:w-[full] md:w-full md:Lh-[150px] md:pt-5 xl:w-full xl:h-[200px] lg:w-full lg:h-[150px]'>
           <h1 className='text-white font-bold text-center text-3xl py-10 sm:text-3xl sm:py-15 md:text-3xl md:py-10  xl:text-center xl:text-5xl xl:py-10  lg:text-center lg:text-5xl lg:py-6'>
             About
@@ -52,6 +50,7 @@ const About = () => {
           <div class="flex justify-center items-center  p-4 ">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 md:grid-cols-2 gap-6 w-full lg:max-w-screen-xl">
               <div class="relative bg-white shadow-lg rounded-lg overflow-hidden w-full max-w-[600px] h-[300px] p-6 pt-2">
+
                 <div class="text-center mb-4">
                   <div class="text-4xl mb-2 my-14"> 
                     <img src={s1} alt="" className=' mx-[200px] xl:mx-20 sm:mx-[70px] md:mx-[100px] lg:mx-[160px] ' />
@@ -73,7 +72,9 @@ const About = () => {
                 </div>
               </div>
 
-              <div class="relative bg-white shadow-lg rounded-lg overflow-hidden w-full max-w-[600px] h-[300px] p-6 pt-2">
+              
+            <div class="relative bg-white shadow-lg rounded-lg overflow-hidden w-full max-w-[600px] h-[300px] p-6 pt-2">
+
                 <div class="text-center mb-4">
                   <div class="text-4xl mb-2 my-14">
                     <img src={s3} alt="" className='mx-[199px] xl:mx-16 sm:mx-[60px] md:mx-[90px] lg:mx-[160px]' />
@@ -83,6 +84,7 @@ const About = () => {
                   <a href=""><i class="fa-solid fa-ellipsis"></i></a>
                 </div>
               </div>
+
               <div class="relative bg-white shadow-lg rounded-lg overflow-hidden w-full max-w-[600px] h-[300px] p-6 pt-2">
                 <div class="text-center mb-4">
                   <div class="text-4xl mb-2 my-14">

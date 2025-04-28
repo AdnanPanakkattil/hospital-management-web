@@ -7,7 +7,6 @@ const AppoinmentPage = () => {
 <div>
     <Header/>
     <Appoinment/>
-
 </div>
   )
 }
