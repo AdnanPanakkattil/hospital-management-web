@@ -1,4 +1,6 @@
-import { ApiClient } from "../api/Api"
+import { ApiClient } from "../api/api"
+
+
 
 export const getContactData = () => {
     return ApiClient.get('ContactApi/')

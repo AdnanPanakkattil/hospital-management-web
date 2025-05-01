@@ -6,7 +6,6 @@ import s3 from "../assets/s3.png"
 import s4 from "../assets/s4.png"
 
 const About = () => {
-zz
   return (
     <>
         <div className='bg-blue-400 w-full h-[100px] sm:h-[140px] sm:w-[full] md:w-full md:Lh-[150px] md:pt-5 xl:w-full xl:h-[200px] lg:w-full lg:h-[150px]'>

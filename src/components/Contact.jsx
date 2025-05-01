@@ -78,7 +78,7 @@ const Contact = () => {
               <Form.Item label="Your Name" name="name" rules={[{ required: true, message: 'Please enter your name' }]} >
                 <Input placeholder="Enter your name" />
               </Form.Item>
-              <Form.Item label="Your Email" name="email" rules={[ { required: true, message: 'Please enter your email' }, { type: 'email', message: 'Enter a valid email address' }, ]} >
+              <Form.Item label="Your Email" name="Email" rules={[ { required: true, message: 'Please enter your email' }, { type: 'email', message: 'Enter a valid email address' }, ]} >
                 <Input placeholder="Enter your email" />
               </Form.Item>
               <Form.Item label="Subject" name="subject" rules={[{ required: true, message: 'Please enter the subject' }]} >

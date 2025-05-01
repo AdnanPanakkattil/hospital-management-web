@@ -15,26 +15,35 @@ const Home = () => {
   return (
 
  <>
-    <div className='flex'>
-      <img src={Frame} alt="" className='lg:w-full lg:h-[650px] sm:h-[400px] sm:w-full xl:w-full xl:h-[650px] 2xl:h-[700px]'/>
-    </div> 
-    <div className='lg:h-[300px] lg:w-[600px] 2xl:h-[400px] 2xl:w-[800px] absolute z-10 top-[100px] left-[10px] sm:top-[180px] sm:left-[100px] lg:top-[250px] lg:left-[50px] md:top-[150px] md:left-[50px] xl:top-[280px] xl:left-50px 2xl:top-[280px] 2xl:left-[150px]'>
-      <div className='text-[36px]  sm:text-4xl lg:text-5xl  md:text-4xl xl:text-5xl 2xl:text-6xl mb-1 '>
-        We Provide  <a href=""  className='text-blue-600 gap-10  ' >Medical</a>Servises
-      </div>
-      <div className=' text-[36px] lg:text-5xl md:text-4xl xl:text-4xl 2xl:text-6xl mb-2'>
-        That You Can <a href="" className='text-blue-600 gap-10'>Trust!</a>
-      </div>
-      <div className='mb-7 text-[10px] sm:text-1xl md:tetx-[2xl] lg:text-[xl] xl:text-1xl 2xl:text-2xl'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>
-        Tenetur maiores eaque dignissimos error molestiae aliquam unde.
-      </div>
-      <button className="transform transition-all duration-300">
-      <Link to={'/Appoinment'} className="text-white md:text-[15px] text-[11px] bg-blue-600 p-[15px] 2xl:p-[25px] rounded-2xl hover:scale-110 hover:origin-right hover:bg-black hover:text-white transform transition-all duration-300">
-          Get Appointment
-      </Link>
+    <div className=''>
+    <div className="relative w-full">
+  <img
+    src={Frame}
+    alt="Medical background"
+    className="w-full h-[400px] sm:h-[400px] md:h-[500px] lg:h-[650px] xl:h-[650px] 2xl:h-[700px] object-cover"
+  />
+  
+  {/* Text Overlay */}
+  <div className="absolute inset-0 flex flex-col justify-center items-start px-4 sm:px-10 md:px-16 lg:px-24 xl:px-32">
+    <h1 className="text-[28px] sm:text-4xl md:text-5xl lg:text-5xl 2xl:text-6xl font-semibold mb-1">
+      We Provide <span className="text-blue-600">Medical</span> Services
+    </h1>
+    <h2 className="text-[28px] sm:text-4xl md:text-5xl lg:text-5xl 2xl:text-6xl font-semibold mb-2">
+      That You Can <span className="text-blue-600">Trust!</span>
+    </h2>
+    <p className="text-[12px] sm:text-base md:text-lg lg:text-xl 2xl:text-2xl text-black mb-6">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+      Tenetur maiores eaque dignissimos error molestiae aliquam unde.
+    </p>
+    <Link
+      to="/Appoinment"
+      className="text-white bg-blue-600 text-sm sm:text-base md:text-lg px-6 py-3 rounded-xl hover:bg-black transition duration-300"
+    >
+      Get Appointment
+    </Link>
+  </div>
+</div>
 
-      </button>
     </div>
 
     <div className="w-full h-[750px] sm:w-full sm:h-[750px] md:h-[500px] lg:h-[200px] xl:h-[200px] p-4">

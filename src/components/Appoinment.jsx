@@ -23,19 +23,20 @@ const Appoinment = () => {
   };
   
 
-  const onFinish = (values)=>{
+  const onFinish = (values) => {
     console.log(values);
     Create(values, {
       onSuccess() {
-        message.success("created successfully");
+        console.log("Appointment created successfully"); // Debug log
+        message.success("Created successfully");
         form.resetFields();
       },
       onError(err) {
-  
-        message.error("error");
+        console.error("Error creating appointment:", err); // Debug log
+        message.error("Error");
       }
     });
-  }
+  };
 
   return (
     <div className="w-full min-h-screen bg-gray-50">
@@ -51,31 +52,31 @@ const Appoinment = () => {
           <h2 className="text-2xl font-semibold text-center mb-6">Appointment Form</h2>
             <Row gutter={16}>
               <Col xs={24} sm={12}>
-                <Form.Item label="First Name" name="first_name" rules={[{required:true,message:"please enter  first name"}]}>
+                <Form.Item label="First Name" name="First_name" rules={[{required:true,message:"please enter  first name"}]}>
                   <Input />
                 </Form.Item>
               </Col>
               <Col xs={24} sm={12}>
-                <Form.Item label="Last Name" name="last_name" rules={[{required:true,message:"please enter last name"}]}>
-                  <Input />
-                </Form.Item>
-              </Col>
-            </Row>
-            <Row gutter={16}>
-              <Col xs={24} sm={12}>
-                <Form.Item label="Email" name="email" rules={[{required:true,message:"please enter Email"}]}>
-                  <Input />
-                </Form.Item>
-              </Col>
-              <Col xs={24} sm={12}>
-                <Form.Item label="Mobile Number" name="mobile" rules={[{required:true,message:"please enter Mobile Number"}]} >
+                <Form.Item label="Last Name" name="Last_name" rules={[{required:true,message:"please enter last name"}]}>
                   <Input />
                 </Form.Item>
               </Col>
             </Row>
             <Row gutter={16}>
               <Col xs={24} sm={12}>
-                <Form.Item label="Patient Name" name="patient_name" rules={[{required:true,message:"please enter Patient Name"}]}>
+                <Form.Item label="Email" name="Email" rules={[{required:true,message:"please enter Email"}]}>
+                  <Input />
+                </Form.Item>
+              </Col>
+              <Col xs={24} sm={12}>
+                <Form.Item label="Mobile Number" name="Phone" rules={[{required:true,message:"please enter Mobile Number"}]} >
+                  <Input />
+                </Form.Item>
+              </Col>
+            </Row>
+            <Row gutter={16}>
+              <Col xs={24} sm={12}>
+                <Form.Item label="Patient Name" name="Patient_name" rules={[{required:true,message:"please enter Patient Name"}]}>
                   <Input />
                 </Form.Item>
             </Col>
@@ -85,7 +86,7 @@ const Appoinment = () => {
                   placeholder="select Doctors"
                   options={doctorsLoading ? [] : doctorsdata?.data?.map(it => ({
                     value: it.id,
-                    label: it. doctor_name
+                    label: it.doctor_name
                   }))}
                 allowClear
                 />
@@ -94,24 +95,24 @@ const Appoinment = () => {
           </Row>
           <Row gutter={16}>
             <Col xs={24} sm={12}>
-              <Form.Item label="Department Name" name="department" rules={[{required:true,message:"please enter your department"}]}>
+            <Form.Item label="Doctor's Name" name="department_name" rules={[{required:true,message:"please enter Doctor's Name"}]}>
                 <Select
                   placeholder="select Department"
-                  options={DepartmentLoading ? [] : Departmentdata.data.map(it => ({
+                  options={DepartmentLoading ? [] : Departmentdata?.data?.map(it => ({
                     value: it.id,
-                    label: it. department_name
+                    label: it.department_name
                   }))}
-                  allowClear
+                allowClear
                 />
               </Form.Item>
             </Col>
             <Col xs={24} sm={12}>
-              <Form.Item label="Appointment Date" name="appointment_date" rules={[{required:true,message:"please enter Appoinment Date"}]}>
+              <Form.Item label="Appointment Date" name="Date" rules={[{required:true,message:"please enter Appoinment Date"}]}>
                 <DatePicker className="w-full" format="YYYY-MM-DD" onChange={handleDateChange} />
               </Form.Item>
             </Col>
           </Row>
-          <Form.Item label="Message" name="message" rules={[{required:true,message:"Enter your Massage"}]}>
+          <Form.Item label="Message" name="Massage">
             <TextArea rows={4} />
           </Form.Item>
           <Form.Item>

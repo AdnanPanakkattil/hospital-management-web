@@ -1,4 +1,5 @@
-import { ApiClient } from "../api/Api"
+import { ApiClient } from "../api/api"
+
 
 export const getAppoinmentData = () => {
     return ApiClient.get('AppoinmentApi/')
