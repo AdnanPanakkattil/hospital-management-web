@@ -1,4 +1,4 @@
-import { ApiClient } from "../api/Api";
+import { ApiClient } from "../api/api"
 
 export const getDepartmentData = () => {
     return ApiClient.get('DepartmentApi/')

@@ -35,7 +35,7 @@ const Header = () => {
           </li>
           <li className="mx-4 my-6 md:my-0">
             <Link
-              to="/appointment"
+              to="/Appoinment"
               className="bg-blue-400 text-white px-6 py-2 rounded hover:bg-black transition duration-500"
             >
               Appointment
