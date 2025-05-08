@@ -41,7 +41,7 @@ const Appoinment = () => {
   return (
     <div className="w-full min-h-screen bg-gray-50">
       <div className="w-full h-[300px] pt-[100px] bg-white">
-        <div className="text-center text-5xl font-bold">Request an Appointment</div>
+        <div className="text-center text-2xl font-bold">Request an Appointment</div>
         <div className="text-center text-3xl mt-10">
           <i className="fa-solid fa-angle-down"></i>
         </div>
