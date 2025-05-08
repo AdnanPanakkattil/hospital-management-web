@@ -55,7 +55,7 @@ const Header = () => {
               <Link
                 to="/Appoinment"
                 onClick={handleLinkClick}
-                className="border-solid border-2 border-black rounded-2xl text-black px-6 py-2 hover:bg-black transition duration-300"
+                className="border-solid border-2 border-black rounded-2xl text-black  px-6 py-2  hover:bg-black hover:text-black transition duration-300"
               >
                 Appointment
               </Link>
