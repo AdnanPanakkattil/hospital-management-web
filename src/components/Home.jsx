@@ -47,7 +47,7 @@ const Home = () => {
     </div>
 
     <div className="w-full h-[750px] sm:w-full sm:h-[750px] md:h-[500px] lg:h-[200px] xl:h-[200px] p-4">
-      <div className="grid grid-cols-1 absolute lg:top-[670px] lg:left-[40px] xl:top-[600px] xl:left-[170px] sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 absolute lg:top-[670px] lg:left-[40px] xl:top-[600px] xl:left-[220px] sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div className="w-[330px] h-[200px] sm:w-[600px]  md:w-[350px] lg:w-[300px] p-4 bg-blue-700 border rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl">
           <h3 className="text-[15px] font-semibold text-white mb-0 text-left">Lorem Amet</h3>
           <h1 className="text-white text-[20px] font-semibold mb-4 text-left">Emergency Cases</h1>
@@ -81,41 +81,38 @@ const Home = () => {
     </div>
   </div>
 
-   <div className='bg-white xl:w-full xl:h-[650px] w-full h-[900px] sm:h-[1200px] md:h-[1250px] lg:h-[550px] '>
-    <div>
-      <img src={a4} alt="" className='xl:h-[570px] xl:w-[550px] absolute xl:left-[50px] left-2 h-[400px] w-[570px]  sm:h-[600px] sm:w-[622px] md:left-[80px] md:w-[600px] lg:w-[500px] lg:h-[500px] lg:left-[10px] '/>
+  <div className='bg-white xl:w-full xl:h-[650px] w-full h-[900px] sm:h-[1200px] md:h-[1250px] lg:h-[550px]'>
+  <div>
+    <img src={a4} alt="" className='xl:h-[570px] xl:w-[550px] absolute xl:left-[50px] left-2 h-[400px] w-[345px] sm:h-[600px] sm:w-[622px] md:left-[80px] md:w-[600px] lg:w-[500px] lg:h-[500px] lg:left-[10px]'/>
+  </div>
+  <div className='absolute xl:left-[50%] xl:top-[950px] top-[1600px] m-[30px] sm:left-[30px] md:top-[1650px] md:left-[60px] lg:top-[950px] lg:left-[530px]'>
+    <div className='bg-blue-200 text-[14px] xl:h-[40px] xl:w-[200px] text-center justify-between xl:mb-4 xl:py-2 h-[40px] w-[150px] py-2 mb-5 lg:text-xl'>
+      Health & Medicine
     </div>
-    <div className='absolute xl:left-[50%] xl:top-[950px] top-[1600px] m-[30px] sm:left-[30px] md:top-[1650px] md:left-[60px] lg:top-[950px] lg:left-[530px]' >
-      <div className='bg-blue-200 text-[14px] xl:h-[40px] xl:w-[200px] text-center justify-between xl:mb-4 xl:py-2 h-[40px] w-[150px] py-2 mb-5 lg:text-xl '>
-        Health & Medicine
-      </div>
-      <div className='xl:text-5xl text-2xl sm:text-4xl md:text-4xl md:mb-5 lg:text-4xl'>
-        The Heart And Science Of
-      </div>
-      <div className='xl:text-5xl text-2xl mb-4 sm:text-4xl sm:mb-6 md:text-4xl lg:text-4xl'>
-        Medicine Service
-      </div>
-      <div className='xl:gap-3 xl:mb-10 text-[9px] mb-8   sm:text-[16px] lg:text-[13px] '> 
-        There are many variations of Lorem Ipsum available, but the majority have <br/>
-        suffered alteration in some form, by injected humor, or randomised words <br/>
-        which don't look even slightly believable.
-      </div>
-      <div className=' xl:h-[100px] xl:w-[600px] '>
-        <div className="flex justify-between xl:text-[15px] font-semibold xl:mb-6 mb-4 lg:text-[14px] ">
-          <p className="xl:text-left xl:text-[15px] text-[9px]"><i class="fa-solid fa-check text-blue-600 mr-2  lg:text-[10px] "></i>Mauris mattis lectus eget ligula</p>
-          <p className="xl:text-right xl:text-[15px] text-[9px]"><i class="fa-solid fa-check text-blue-600 mr-2 lg:text-[10px]"></i>Mauris mattis lectus eget ligula</p>
-        </div>
-        <div className="flex justify-between xl:text-[15px] font-semibold xl:mb-[70px] mb-10 mr-4 sm:mb-12 lg:text-[14px]">
-          <p className="xl:text-left xl:text-[15px] text-[9px]"><i class="fa-solid fa-check text-blue-600 mr-2 lg:text-[10px]"></i>Aenean facilisis erat et metus</p>
-          <p className="xl:text-right xl:text-[15px] text-[9px] ml-2"><i class="fa-solid fa-check text-blue-600 mr-2 lg:text-[10px]"></i>Aenean facilisis erat et metus</p>
-        </div>
-        <button className=''>
-          <a href="" className='bg-blue-600 text-white text-[12px] xl:p-[20px] xl:px-10 rounded-xl p-5 px-10 hover:text-white hover:bg-black transform transition-all duration-600'>Read More</a>
-        </button>
-      </div> 
+    <div className='xl:text-5xl text-2xl sm:text-4xl md:text-4xl md:mb-5 lg:text-4xl'>
+      The Heart And Science Of
     </div>
-  </div> 
-
+    <div className='xl:text-5xl text-2xl mb-4 sm:text-4xl sm:mb-6 md:text-4xl lg:text-4xl'>
+      Medicine Service
+    </div>
+    <div className='xl:gap-3 xl:mb-10 text-[9px] mb-8 sm:text-[16px] lg:text-[13px]'> 
+      There are many variations of Lorem Ipsum available...
+    </div>
+    <div className='xl:h-[100px] xl:w-[600px]'>
+      <div className="flex justify-between xl:text-[15px] font-semibold xl:mb-6 mb-4 lg:text-[14px]">
+        <p className="xl:text-left xl:text-[15px] text-[9px]"><i class="fa-solid fa-check text-blue-600 mr-2 lg:text-[10px]"></i>Mauris mattis lectus eget ligula</p>
+        <p className="xl:text-right xl:text-[15px] text-[9px]"><i class="fa-solid fa-check text-blue-600 mr-2 lg:text-[10px]"></i>Mauris mattis lectus eget ligula</p>
+      </div>
+      <div className="flex justify-between xl:text-[15px] font-semibold xl:mb-[70px] mb-10 mr-4 sm:mb-12 lg:text-[14px]">
+        <p className="xl:text-left xl:text-[15px] text-[9px]"><i class="fa-solid fa-check text-blue-600 mr-2 lg:text-[10px]"></i>Aenean facilisis erat et metus</p>
+        <p className="xl:text-right xl:text-[15px] text-[9px] ml-2"><i class="fa-solid fa-check text-blue-600 mr-2 lg:text-[10px]"></i>Aenean facilisis erat et metus</p>
+      </div>
+      <button className=''>
+        <a href="" className='bg-blue-600 text-white text-[12px] xl:p-[20px] xl:px-10 rounded-xl p-5 px-10 hover:text-white hover:bg-black transform transition-all duration-600'>Read More</a>
+      </button>
+    </div>
+  </div>
+</div>
 
    <div className='bg-white h-[450px] xl:h-[500px] md:h-[600px] lg:h-[650px] xl:mb-32 '>
     <div className='text-center  lg:text-6xl text-2xl sm:text-5xl sm:mb-14 homehedding mb-10 md:mb-0 xl:mb-20'> 
